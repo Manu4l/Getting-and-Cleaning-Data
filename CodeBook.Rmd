@@ -8,6 +8,9 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+# Content 
+
+This CodeBook includes a description for the evaluated data as well as respective code and explanations.
 
 ## Peer-graded Assignment: Getting and Cleaning Data Course Project
 
