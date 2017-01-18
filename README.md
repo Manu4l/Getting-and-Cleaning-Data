@@ -2,10 +2,10 @@
 
 This repo contains four files:
 
-* README - gives an overview over this repo and the used code
-* CodeBook - includes information regarding the data set and the code
+* README.md - gives an overview over this repo and the used code
+* CodeBook.rmd - includes information regarding the data set and the code
 * run_analysis.R - the actual r file
-* Tidy dataset - the actual cleaned and tidied data set
+* Tidy.txt - the actual cleaned and tidied data set
 
 ## Actual tasks
 
