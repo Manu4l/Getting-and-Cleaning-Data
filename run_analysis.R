@@ -4,7 +4,7 @@
 # Activity Recognition Using Smartphones Dataset Version 1.0 
 # ================================================================== Jorge L.
 # Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. Smartlab - Non
-# Linear Complex Systems Laboratory DITEN - Universit‡ degli Studi di Genova. 
+# Linear Complex Systems Laboratory DITEN - Universit√† degli Studi di Genova. 
 # Via Opera Pia 11A, I-16145, Genoa, Italy. activityrecognition@smartlab.ws 
 # www.smartlab.ws 
 # ==================================================================
@@ -112,5 +112,5 @@ aggregatedData <- aggregate(dataMerge[, 3:ncol(dataMerge)],
                                activityType = dataMerge$activityType),
                        mean)
 
-#write csv file
-write.csv(aggregatedData, file = "Tidy.csv")
+# create txt file
+write.table(aggregatedData, file = "Tidy.txt", row.names = FALSE)
