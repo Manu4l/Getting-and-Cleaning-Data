@@ -1,6 +1,6 @@
 # Peer-graded Assignment: Getting and Cleaning Data Course Project
 
-This repo contains three files:
+This repo contains four files:
 
 * README.md - gives an overview over this repo and the used code
 * CodeBook.rmd - includes information regarding the data set and the code
