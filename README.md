@@ -1,7 +1,34 @@
 # Peer-graded Assignment: Getting and Cleaning Data Course Project
 
-## Load packages
-library(tidyverse)
+This repo contains four files:
+
+* README - gives an overview over this repo and the used code
+* CodeBook - includes information regarding the data set and the code
+* run_analysis.R - the actual r file
+* Tidy dataset - the actual cleaned and tidied data set
+
+## Actual tasks
+
+The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 1) a tidy data set as described below, 2) a link to a Github repository with your script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
+
+You should create one R script called run_analysis.R that does the following.
+
+   1. Merges the training and the test sets to create one data set.
+   2. Extracts only the measurements on the mean and standard deviation for each measurement.
+   3. Uses descriptive activity names to name the activities in the data set
+   4. Appropriately labels the data set with descriptive variable names.
+   5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each     activity and each subject.
+   
+## Approach
+
+1. Download data
+2. Unzip data
+3. Start merging data
+4. Start cleaning data
+5. Summarize data
+6. Create Repo including all required files
+
+#Scripts are how they are connected
 
 ## Download and unzip data
 ```
@@ -12,7 +39,6 @@ fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%2
 download.file(fileUrl,destfile="./data/Dataset.zip")
 unzip(zipfile="./data/Dataset.zip",exdir="./data")
 ```
-
 
 Read subject files
 ```
@@ -50,7 +76,6 @@ Merge to full data set
 subjectActivityAll <- cbind(subdataAll, acdataAll)
 dataMerge <- cbind(subjectActivityAll, dataMerge)
 ```
-
 ## 2. Extract only the measurements on the mean and standard deviation for each measurement.
 ```
 dataMeasureMean <- grep("mean\\(\\)|std\\(\\)", Features$trackedVariable, value=TRUE) 
@@ -72,7 +97,6 @@ names(dataMerge) <- gsub ("std", "SD", names(dataMerge))
 names(dataMerge) <- gsub ("mean", "Mean", names(dataMerge))
 head(str(dataMerge),2)
 ```
-
 ## 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Beginning from the third column calculate means for each subject and activity.
