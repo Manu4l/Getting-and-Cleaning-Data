@@ -29,7 +29,7 @@ You should create one R script called run_analysis.R that does the following.
 5. Summarize data
 6. Create Repo including all required files
 
-#Scripts are how they are connected
+# Scripts and how they are connected
 
 ## Download and unzip data
 ```
