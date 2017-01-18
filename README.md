@@ -5,8 +5,6 @@ This repo contains four files:
 * README.md - gives an overview over this repo and the used code
 * CodeBook.rmd - includes information regarding the data set and the code
 * run_analysis.R - the actual r file
-* Tidy.txt - the actual cleaned and tidied data set as TXT file
-* Tidy.csv - the cleaned and tidied data set as CSV file (looks cleaner than TXT)
 
 ## Actual tasks
 
