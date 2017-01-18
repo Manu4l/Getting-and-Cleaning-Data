@@ -1,10 +1,11 @@
 # Peer-graded Assignment: Getting and Cleaning Data Course Project
 
-This repo contains four files:
+This repo contains three files:
 
 * README.md - gives an overview over this repo and the used code
 * CodeBook.rmd - includes information regarding the data set and the code
 * run_analysis.R - the actual r file
+* [the actual tidied data set has been uploaded via course submission and is not shown here]
 
 ## Actual tasks
 
